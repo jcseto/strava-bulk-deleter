@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import stravaLogin from './Assets/LoginWithStrava.png';
 import './App.css';
 
-var authorizationString = "https://www.strava.com/oauth/authorize?client_id=14220&response_type=code&redirect_uri=http://localhost:3000&approval_prompt=force";
+const authorizationString = "https://www.strava.com/oauth/authorize?client_id=14220&response_type=code&redirect_uri=http://localhost:3000&approval_prompt=force";
 
 var App = React.createClass({
   render: function(){
