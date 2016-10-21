@@ -1,9 +1,6 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import stravaLogin from './Assets/LoginWithStrava.png';
+import React from 'react';
 import './App.css';
-
-const authorizationString = "https://www.strava.com/oauth/authorize?client_id=14220&response_type=code&redirect_uri=http://localhost:3000&approval_prompt=force";
+import ConnectStrava from './components/ConnectStrava';
 
 var App = React.createClass({
   render: function(){
@@ -14,9 +11,7 @@ var App = React.createClass({
           <h2> Connect to your Strava account to deleted unwanted Activities! </h2>
         </div>
         <div id="main"> 
-          <a href={authorizationString}>
-            <img src={stravaLogin}></img>
-          </a>
+          <ConnectStrava />
         </div>
       </div>
     )
